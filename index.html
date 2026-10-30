@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lou Mao · Restaurant à Aix-en-Provence</title>
+  <meta name="description" content="Lou Mao, restaurant de cuisine méditerranéenne au cœur d'Aix-en-Provence, 32 rue Emeric David. Chef Flavien Panaiva. Du mardi au samedi, midi et soir.">
+  <meta property="og:title" content="Lou Mao · Aix-en-Provence">
+  <meta property="og:description" content="Cuisine méditerranéenne de saison, au cœur d'Aix. 32 rue Emeric David.">
+  <meta property="og:image" content="images/risotto.jpg">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Kristi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Lou Mao",
+    "servesCuisine": "Méditerranéenne",
+    "telephone": "+33442532605",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "32 rue Emeric David",
+      "postalCode": "13100",
+      "addressLocality": "Aix-en-Provence",
+      "addressCountry": "FR"
+    },
+    "openingHours": "Tu-Sa",
+    "sameAs": ["https://www.instagram.com/loumao.aix/"]
+  }
+  </script>
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <a class="brand" href="#top" aria-label="Lou Mao, retour en haut">
+    <img src="images/logo.svg" alt="" width="44" height="44">
+    <span class="script">Lou Mao</span>
+  </a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span>
+  </button>
+  <nav id="nav" class="nav">
+    <a href="#maison">La maison</a>
+    <a href="#carte">La carte</a>
+    <a href="#chef">Le chef</a>
+    <a href="#infos">Infos</a>
+    <a class="btn btn-small" href="tel:+33442532605">Réserver</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Accueil -->
+  <section class="hero">
+    <div class="hero-text">
+      <img class="hero-logo" src="images/logo.svg" alt="Logo Lou Mao : un mas provençal dessiné à l'encre" width="220" height="220">
+      <h1 class="script hero-title">Lou Mao</h1>
+      <p class="kicker">Restaurant · Aix centre-ville</p>
+      <p class="hero-lead">Une cuisine méditerranéenne de saison, une carte courte qui change souvent, et une terrasse à l'ombre des platanes.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+33442532605">Réserver une table</a>
+        <a class="btn btn-ghost" href="#carte">Découvrir la carte</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/facade.jpg" alt="La façade et la terrasse de Lou Mao, rue Emeric David" width="360" height="640">
+    </figure>
+  </section>
+
+  <div class="ornament" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+
+  <!-- La maison -->
+  <section class="maison" id="maison">
+    <div class="section-head">
+      <p class="kicker">La maison</p>
+      <h2>Un bistrot provençal, <em>tout simplement</em></h2>
+    </div>
+    <div class="maison-grid">
+      <div class="maison-text">
+        <p>« Lou Mao », c'est un petit restaurant au cœur d'Aix, rue Emeric David, à deux pas de la place Miollis. Des murs bleu nuit, quelques tables en terrasse, et une cuisine qui suit le marché.</p>
+        <p>La carte est volontairement courte et se renouvelle environ toutes les trois semaines. On y cuisine des produits frais, avec l'accent du Sud : huile d'olive, herbes, poissons, légumes de saison… et quelques gourmandises qu'on aime partager.</p>
+        <p class="signature script">À très vite chez nous</p>
+      </div>
+      <figure class="stack">
+        <img class="stack-a" src="images/terrasse.jpg" alt="Table de la terrasse au soleil, chaises aux motifs bleus" width="511" height="640" loading="lazy">
+        <img class="stack-b" src="images/salle.jpg" alt="Un cadre doré sur le mur bleu de la salle" width="640" height="640" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- La carte -->
+  <section class="carte" id="carte">
+    <div class="section-head">
+      <p class="kicker">La carte</p>
+      <h2>Quelques assiettes <em>de la maison</em></h2>
+      <p class="sub">La carte change au fil des saisons. Voici quelques plats qui ont marqué nos clients.</p>
+    </div>
+
+    <div class="menu-card">
+      <img class="menu-card-logo" src="images/logo.svg" alt="" width="90" height="90">
+      <ul class="dishes">
+        <li><span class="dish">Risotto aux gambas</span><span class="desc">flambées à l'anis, en salle</span></li>
+        <li><span class="dish">Tapenade nocturne</span><span class="desc">burrata, artichaut</span></li>
+        <li><span class="dish">Souris d'agneau</span><span class="desc">cuite longuement</span></li>
+        <li><span class="dish">Coquillettes</span><span class="desc">jambon, truffe</span></li>
+        <li><span class="dish">Poisson du jour</span><span class="desc">selon la pêche</span></li>
+        <li><span class="dish">Café très gourmand</span><span class="desc">pour finir en douceur</span></li>
+      </ul>
+      <p class="menu-note">Carte courte · Produits frais · Desserts maison</p>
+      <a class="link" href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">Voir la carte du moment sur Instagram →</a>
+    </div>
+
+    <div class="gallery">
+      <figure class="g-tall"><img src="images/flambe.jpg" alt="Le chef flambe les gambas à l'anis devant la table" loading="lazy"><figcaption>Flambé en salle</figcaption></figure>
+      <figure><img src="images/risotto.jpg" alt="Risotto aux gambas dans une assiette en céramique" loading="lazy"><figcaption>Risotto aux gambas</figcaption></figure>
+      <figure><img src="images/assiette-oignon.jpg" alt="Oignon rôti, crème brûlée et croûtons" loading="lazy"></figure>
+      <figure><img src="images/tartine.jpg" alt="Tartine grillée garnie, pommes paille et oignon rouge" loading="lazy"></figure>
+      <figure><img src="images/courgette.jpg" alt="Courgette et radis, sauce verte" loading="lazy"></figure>
+      <figure class="g-wide"><img src="images/dessert.jpg" alt="Dessert crémeux, abricot et biscuit" loading="lazy"><figcaption>Desserts maison</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Le chef -->
+  <section class="chef" id="chef">
+    <div class="chef-inner">
+      <div class="chef-text">
+        <p class="kicker kicker-light">En cuisine</p>
+        <h2>Flavien <em>Panaiva</em></h2>
+        <p>Chef français installé à Aix, Flavien signe une cuisine de saison, précise et généreuse. Des assiettes colorées, des cuissons justes, et toujours une touche de Méditerranée.</p>
+        <p>Pour suivre ses créations et les coulisses de la cuisine :</p>
+        <a class="btn btn-light" href="https://www.instagram.com/flavien_panaiva/" target="_blank" rel="noopener">@flavien_panaiva</a>
+      </div>
+      <div class="chef-photos">
+        <img src="images/chef-asperges.jpg" alt="Asperges vertes, crème et chapelure, huile d'herbes" loading="lazy">
+        <img src="images/chef-burrata.jpg" alt="Burrata, câpres frites et huile pimentée" loading="lazy">
+        <img src="images/chef-veloute.jpg" alt="Velouté, champignon rôti et croûtons" loading="lazy">
+        <img src="images/chef-carottes.jpg" alt="Carottes rôties au thym sur une crème" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Infos -->
+  <section class="infos" id="infos">
+    <div class="section-head">
+      <p class="kicker">Nous trouver</p>
+      <h2>Infos <em>pratiques</em></h2>
+    </div>
+    <div class="infos-grid">
+      <div class="info-block">
+        <h3>Adresse</h3>
+        <p>32 rue Emeric David<br>13100 Aix-en-Provence</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Lou+Mao+32+rue+Emeric+David+Aix-en-Provence" target="_blank" rel="noopener">Itinéraire →</a>
+      </div>
+      <div class="info-block">
+        <h3>Horaires</h3>
+        <p>Du mardi au samedi<br>Midi &amp; soir</p>
+        <p class="muted">Fermé le dimanche et le lundi</p>
+      </div>
+      <div class="info-block">
+        <h3>Réservation</h3>
+        <p><a class="tel" href="tel:+33442532605">04 42 53 26 05</a></p>
+        <a class="link" href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">ou par message sur Instagram →</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Plan : Lou Mao, 32 rue Emeric David, Aix-en-Provence" src="https://www.google.com/maps?q=32+rue+Emeric+David,+13100+Aix-en-Provence&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="images/logo.svg" alt="" width="80" height="80">
+  <p class="script footer-name">Lou Mao</p>
+  <p>32 rue Emeric David · 13100 Aix-en-Provence · <a href="tel:+33442532605">04 42 53 26 05</a></p>
+  <p><a href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">Instagram @loumao.aix</a></p>
+  <p class="muted small">© 2026 Lou Mao</p>
+</footer>
+
+<a class="call-fab" href="tel:+33442532605" aria-label="Appeler pour réserver">Réserver</a>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const open = document.body.classList.toggle('nav-open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+    burger.setAttribute('aria-expanded', false);
+  }));
+  const bar = document.querySelector('.topbar');
+  const onScroll = () => bar.classList.toggle('scrolled', window.scrollY > 20);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>
