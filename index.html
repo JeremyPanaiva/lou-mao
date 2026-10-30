@@ -12,7 +12,7 @@
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Kristi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Kristi&family=Pinyon+Script&family=Alegreya:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
@@ -28,7 +28,7 @@
       "addressLocality": "Aix-en-Provence",
       "addressCountry": "FR"
     },
-    "openingHours": "Tu-Sa",
+    "openingHours": ["Tu-Sa 12:00-16:00", "Tu-Sa 18:30-01:00"],
     "sameAs": ["https://www.instagram.com/loumao.aix/"]
   }
   </script>
@@ -47,6 +47,7 @@
     <a href="#maison">La maison</a>
     <a href="#carte">La carte</a>
     <a href="#chef">Le chef</a>
+    <a href="#avis">Avis</a>
     <a href="#infos">Infos</a>
     <a class="btn btn-small" href="tel:+33442532605">Réserver</a>
   </nav>
@@ -96,22 +97,48 @@
   <section class="carte" id="carte">
     <div class="section-head">
       <p class="kicker">La carte</p>
-      <h2>Quelques assiettes <em>de la maison</em></h2>
-      <p class="sub">La carte change au fil des saisons. Voici quelques plats qui ont marqué nos clients.</p>
+      <h2>La carte <em>du moment</em></h2>
+      <p class="sub">Tout est cuisiné à la minute, à partir de produits frais. La carte se renouvelle régulièrement.</p>
     </div>
 
     <div class="menu-card">
       <img class="menu-card-logo" src="images/logo.svg" alt="" width="90" height="90">
-      <ul class="dishes">
-        <li><span class="dish">Risotto aux gambas</span><span class="desc">flambées à l'anis, en salle</span></li>
-        <li><span class="dish">Tapenade nocturne</span><span class="desc">burrata, artichaut</span></li>
-        <li><span class="dish">Souris d'agneau</span><span class="desc">cuite longuement</span></li>
-        <li><span class="dish">Coquillettes</span><span class="desc">jambon, truffe</span></li>
-        <li><span class="dish">Poisson du jour</span><span class="desc">selon la pêche</span></li>
-        <li><span class="dish">Café très gourmand</span><span class="desc">pour finir en douceur</span></li>
-      </ul>
-      <p class="menu-note">Carte courte · Produits frais · Desserts maison</p>
-      <a class="link" href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">Voir la carte du moment sur Instagram →</a>
+      <p class="menu-title">Menu</p>
+
+      <div class="menu-cols">
+        <div class="menu-col">
+          <h3 class="course">Entrées</h3>
+          <ul class="dishes">
+            <li><p class="dish">Lou Cèu <span class="price">13</span></p><p class="desc">Velouté de cèpes, noix concassées et féta.</p></li>
+            <li><p class="dish">Lou Ioù <span class="price">13</span></p><p class="desc">Œufs mimosas croustillants, chips de parmesan, chorizos grillés et mayonnaise verte.</p></li>
+            <li><p class="dish">Lou Cèbo <span class="price">15</span></p><p class="desc">Oignon confit puis brûlé, crème au Comté affinée gratinée, muscade, oignons caramélisés et croûtons grillés.</p></li>
+            <li><p class="dish">Lou Cogeta <span class="price">16</span></p><p class="desc">Mini farcis à la courgette, viande hachée, yaourt citronné et pico de gallo.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-col">
+          <h3 class="course">Plats</h3>
+          <ul class="dishes">
+            <li><p class="dish">Lou Risotto <span class="price">24</span> <span class="fav" title="Coup de cœur">♥</span></p><p class="desc">Risotto crémeux, gambas tigre flambées au pastis, courgettes grillées.</p></li>
+            <li><p class="dish">Lou Pintarda <span class="price">26</span></p><p class="desc">Suprême de pintade rôti, purée de courgettes à la sauge, sauce au sésame noir et herbes fraîches.</p></li>
+            <li><p class="dish">Lou Pofre <span class="price">27</span></p><p class="desc">Tentacules d'encornets, purée de pomme de terre, salsa de poivrons et beurre rouge.</p></li>
+            <li><p class="dish">Lou Vedèl <span class="price">29</span></p><p class="desc">Paleron de veau confit des heures, jus réduit d'une blanquette, mini carottes et pommes de terre.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-col">
+          <h3 class="course">Desserts</h3>
+          <ul class="dishes">
+            <li><p class="dish">Lou Pavlova <span class="price">8</span> <span class="fav" title="Coup de cœur">♥</span></p><p class="desc">Meringue croquante, crème mascarpone avec son Nutella et ses éclats de noisettes.</p></li>
+            <li><p class="dish">Lou Limon <span class="price">9</span></p><p class="desc">Cream cheese à l'écorce de citron vert, crémeux à la vanille, biscuit sablé.</p></li>
+            <li><p class="dish">Lou Castanha <span class="price">9</span></p><p class="desc">Gâteau moelleux au marron, crème montée à la châtaigne et purée de marron.</p></li>
+            <li><p class="dish">Café gourmand <span class="price">13</span></p><p class="desc">Assortiment de nos 3 desserts.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu-note"><span class="fav">♥</span> Coups de cœur de la maison · Prix en euros</p>
+      <a class="link" href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">Suivre les nouvelles cartes sur Instagram →</a>
     </div>
 
     <div class="gallery">
@@ -143,6 +170,50 @@
     </div>
   </section>
 
+  <!-- Avis -->
+  <section class="avis" id="avis">
+    <div class="section-head">
+      <p class="kicker">Ils en parlent</p>
+      <h2 class="avis-title">Avis clients</h2>
+      <div class="scores">
+        <p><span class="score">4,8</span><span class="stars" aria-hidden="true">★★★★★</span>TheFork · 132 avis</p>
+        <p><span class="score">4,8</span><span class="stars" aria-hidden="true">★★★★★</span>Google · 203 avis</p>
+      </div>
+    </div>
+
+    <figure class="quote quote-main">
+      <blockquote>
+        <p class="quote-lead">Une pépite aixoise !</p>
+        <p>Chez Lou Mao, on ne vient pas seulement déjeuner ou dîner, on découvre l'univers d'un jeune créateur passionné qui ose sortir des sentiers battus.</p>
+        <p>Tout est cuisiné à la minute à partir de produits frais. Chaque assiette raconte une histoire où les saveurs dialoguent avec des textures surprenantes.</p>
+      </blockquote>
+      <figcaption>Laurence D.</figcaption>
+    </figure>
+
+    <div class="quotes">
+      <figure class="quote">
+        <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote><p>Une adresse bistronomique remarquable. Chaque assiette, de l'entrée au dessert, révèle une cuisine subtile, maîtrisée et pleine de saveurs.</p></blockquote>
+        <figcaption>Camille G.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote><p>Le risotto et la pavlova sont aussi magnifiques que délicieux. Ça faisait longtemps que je ne m'étais pas autant régalée !</p></blockquote>
+        <figcaption>Amandine R.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote><p>Un vrai régal. Les plats sont excellents. L'accueil et l'écoute sont au rendez-vous.</p></blockquote>
+        <figcaption>Olivier P.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote><p>Petit restaurant très bien placé dans Aix-centre avec une terrasse calme. Cuisine bistronomique de région, recherchée et délicieuse.</p></blockquote>
+        <figcaption>Charlotte G.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- Infos -->
   <section class="infos" id="infos">
     <div class="section-head">
@@ -157,7 +228,7 @@
       </div>
       <div class="info-block">
         <h3>Horaires</h3>
-        <p>Du mardi au samedi<br>Midi &amp; soir</p>
+        <p>Du mardi au samedi<br>12h00 – 16h00<br>18h30 – 01h00</p>
         <p class="muted">Fermé le dimanche et le lundi</p>
       </div>
       <div class="info-block">
@@ -177,6 +248,7 @@
   <img src="images/logo.svg" alt="" width="80" height="80">
   <p class="script footer-name">Lou Mao</p>
   <p>32 rue Emeric David · 13100 Aix-en-Provence · <a href="tel:+33442532605">04 42 53 26 05</a></p>
+  <p>Du mardi au samedi · 12h00 – 16h00 · 18h30 – 01h00</p>
   <p><a href="https://www.instagram.com/loumao.aix/" target="_blank" rel="noopener">Instagram @loumao.aix</a></p>
   <p class="muted small">© 2026 Lou Mao</p>
 </footer>
